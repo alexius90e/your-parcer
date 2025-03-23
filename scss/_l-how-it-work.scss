@@ -1,0 +1,57 @@
+.how-it-work {
+  margin: 89px 0 69px;
+
+  @include laptop {
+    margin: 50px 0;
+  }
+  
+  &__title {
+    margin: 0 0 12px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include laptop {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:  1 1 auto;
+
+    @include laptop {
+      flex: 1 1 100%;
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__list {
+    flex: 0 1 502px;
+    margin: 0 auto;
+    padding-left: 24px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+
+    @include laptop {
+      flex: 0 1 768px;
+    }
+  }
+}
