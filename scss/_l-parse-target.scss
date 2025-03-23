@@ -1,0 +1,47 @@
+.parse-target {
+  margin: 96px 0 70px;
+
+  @include laptop {
+    margin: 50px 0;
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0 0 40px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+  }
+
+  &__calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+
+    &-button {
+      display: inline-block;
+      padding: 9px 19px;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      background-color: #34a0b2;
+      cursor: pointer;
+    }
+  }
+}
