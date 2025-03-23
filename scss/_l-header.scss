@@ -144,6 +144,11 @@
       font-weight: 400;
       font-size: 16px;
       color: #000;
+      transition: color ease-in-out 0.2s;
+
+      &:hover {
+        color: #888888;
+      }
     }
   }
 
@@ -167,6 +172,11 @@
         font-weight: 400;
         font-size: 16px;
         color: #000;
+        transition: color ease-in-out 0.2s;
+
+        &:hover {
+          color: #888888;
+        }
       }
     }
 
@@ -199,10 +209,20 @@
 
         &_tg {
           background-color: #6c6dab;
+          transition: background-color ease-in-out 0.2s;
+
+          &:hover {
+            background-color: #5c5d92;
+          }
         }
 
         &_wp {
           background-color: #339d4a;
+          transition: background-color ease-in-out 0.2s;
+
+          &:hover {
+            background-color: #2f8e43;
+          }
         }
       }
     }
@@ -223,7 +243,15 @@
       border: none;
       border-radius: 8px;
       background-color: #217aff;
+      transition-property: background-color, color;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.2s;
       cursor: pointer;
+
+      &:hover {
+        color: #ffffff;
+        background-color: #1b66d5;
+      }
     }
   }
 

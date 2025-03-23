@@ -55,7 +55,14 @@
       border: none;
       border-radius: 10px;
       background-color: #c4d63d;
+      transition-property: background-color, color;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.2s;
       cursor: pointer;
+
+      &:hover {
+        background-color: #d8ef2a;
+      }
     }
   }
 
