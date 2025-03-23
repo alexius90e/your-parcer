@@ -1,0 +1,78 @@
+.advantages {
+  margin: 60px 0 92px;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    flex: 1 1 auto;
+  }
+
+  &__banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0 0 380px;
+    min-height: 546px;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 10px 100px;
+    background: url(../assets/advantages-banner-bg.jpg) center / cover no-repeat;
+
+    @include tablet {
+      flex: 1 1 auto;
+      min-height: 360px;
+      border-radius: 10px 50px;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 25px;
+      text-align: center;
+      color: #000;
+    }
+
+    &-button {
+      display: inline-block;
+      padding: 22px 44px;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      background-color: #c4d63d;
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+  }
+
+  &__subtitle {
+    margin: 24px 0 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+  }
+}
