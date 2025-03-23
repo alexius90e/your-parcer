@@ -1,6 +1,10 @@
 .advantages {
   margin: 60px 0 92px;
 
+  @include laptop {
+    margin:  50px 0;
+  }
+
   &__wrapper {
     display: flex;
     align-items: flex-start;

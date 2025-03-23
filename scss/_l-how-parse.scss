@@ -1,0 +1,29 @@
+.how-parse {
+  margin: 92px 0 80px;
+  
+  @include laptop {
+    margin:  50px 0;
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+  }
+}
