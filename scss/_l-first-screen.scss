@@ -1,0 +1,56 @@
+.first-screen {
+  margin: 50px 0 74px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__content {
+    flex: 1 1 auto;
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000;
+  }
+
+  &__description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+  }
+
+  &__figure {
+    flex: 0 0 468px;
+    padding: 26px 58px;
+    box-sizing: border-box;
+
+    @include laptop {
+      flex: 0 0 360px;
+      padding: 0;
+    }
+
+    @include tablet {
+      flex: 1 1 100%;
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      border-radius: 60px 5px;
+    }
+  }
+}
