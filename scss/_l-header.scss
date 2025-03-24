@@ -149,7 +149,9 @@
       &-item {
         position: relative;
         display: flex;
-        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex: 0 0 auto;
         gap: 12px;
         padding: 4px 0;
 
@@ -157,8 +159,35 @@
           padding: 0;
         }
 
-        &-link {
+        &::after {
+          content: '';
+          display: block;
           flex: 0 0 auto;
+          order: 1;
+          width: 20px;
+          aspect-ratio: 1 / 1;
+          background: url(../assets/dropdown.svg) center / 8px no-repeat;
+          transition: transform ease-in-out 0.2s;
+          display: none;
+        }
+
+        &:has(.header__nav-submenu) {
+          &::after {
+            display: block;
+
+            @include tablet {
+              display: none;
+            }
+          }
+        }
+
+        &:hover::after {
+          transform: rotate(180deg);
+        }
+
+        &-link {
+          flex: 1 1 50%;
+          order: 0;
           font-weight: 400;
           font-size: 16px;
           color: #000;
@@ -178,6 +207,7 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
+      order: 2;
       min-width: 240px;
       padding: 16px;
       margin: 0;
