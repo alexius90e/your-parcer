@@ -1,2 +1,11 @@
 .main {
+  padding-top: 130px;
+
+  @include laptop {
+    padding-top: 106px;
+  }
+
+  @include tablet {
+    padding-top: 90px;
+  }
 }

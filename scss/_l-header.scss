@@ -1,5 +1,8 @@
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 999;
 
   &::before {
@@ -123,32 +126,93 @@
   }
 
   &__nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 28px;
+    &-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
 
-    @include laptop {
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      gap: 12px 24px;
-    }
-
-    @include tablet {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    &-link {
-      flex: 0 0 auto;
-      font-weight: 400;
-      font-size: 16px;
-      color: #000;
-      transition: color ease-in-out 0.2s;
-
-      &:hover {
-        color: #888888;
+      @include laptop {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 12px 24px;
       }
+
+      @include tablet {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 4px 0;
+
+        @include tablet {
+          padding: 0;
+        }
+
+        &-link {
+          flex: 0 0 auto;
+          font-weight: 400;
+          font-size: 16px;
+          color: #000;
+          transition: color ease-in-out 0.2s;
+
+          &:hover {
+            color: #888888;
+          }
+        }
+      }
+    }
+
+    &-submenu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 240px;
+      padding: 16px;
+      margin: 0;
+      box-sizing: border-box;
+      border-radius: 10px;
+      list-style-type: none;
+      background-color: #ffffff;
+      box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.1);
+      display: none;
+
+      @include tablet {
+        position: static;
+        display: flex;
+        padding: 0;
+        padding-left: 12px;
+        box-shadow: none;
+      }
+
+      &-item {
+        &-link {
+          flex: 0 0 auto;
+          font-weight: 400;
+          font-size: 16px;
+          color: #000;
+          transition: color ease-in-out 0.2s;
+
+          &:hover {
+            color: #888888;
+          }
+        }
+      }
+    }
+
+    &-menu-item:hover &-submenu {
+      display: flex;
     }
   }
 

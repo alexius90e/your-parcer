@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/how-it-work.css" />
     <link rel="stylesheet" href="./css/how-parse.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/parse-target.css" />
     <link rel="stylesheet" href="./css/services.css" />
     <script type="module" src="./js/index.js" defer></script>
@@ -31,10 +32,38 @@
           <div class="header__menu">
             <div class="header__menu-wrapper">
               <nav class="header__nav">
-                <a class="header__nav-link" href="#">Контакты</a>
-                <a class="header__nav-link" href="#">О нас</a>
-                <a class="header__nav-link" href="#">Услуги</a>
-                <a class="header__nav-link" href="#">Блог</a>
+                <ul class="header__nav-menu">
+                  <li class="header__nav-menu-item">
+                    <a class="header__nav-menu-item-link" href="#">Контакты</a>
+                  </li>
+                  <li class="header__nav-menu-item">
+                    <a class="header__nav-menu-item-link" href="#">О нас</a>
+                  </li>
+                  <li class="header__nav-menu-item">
+                    <a class="header__nav-menu-item-link" href="#">Услуги</a>
+
+                    <ul class="header__nav-submenu">
+                      <li class="header__nav-submenu-item">
+                        <a class="header__nav-submenu-item-link" href="#">Пасрсинг WB</a>
+                      </li>
+                      <li class="header__nav-submenu-item">
+                        <a class="header__nav-submenu-item-link" href="#">Пасрсинг Ozon</a>
+                      </li>
+                      <li class="header__nav-submenu-item">
+                        <a class="header__nav-submenu-item-link" href="#">Мониторинг цен</a>
+                      </li>
+                      <li class="header__nav-submenu-item">
+                        <a class="header__nav-submenu-item-link" href="#">Мониторинг конкурентов</a>
+                      </li>
+                      <li class="header__nav-submenu-item">
+                        <a class="header__nav-submenu-item-link" href="#">Мониторинг объявлений</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-menu-item">
+                    <a class="header__nav-menu-item-link" href="#">Блог</a>
+                  </li>
+                </ul>
               </nav>
 
               <div class="header__contacts">
@@ -42,9 +71,7 @@
                   <a class="header__contacts-list-link" href="mailto:inf0@your-parser.ru">
                     inf0@your-parser.ru
                   </a>
-                  <a class="header__contacts-list-link" href="tel:+79517684792">
-                    +79517684792
-                  </a>
+                  <a class="header__contacts-list-link" href="tel:+79517684792"> +79517684792 </a>
                 </div>
 
                 <div class="header__contacts-social">
@@ -277,7 +304,9 @@
           </div>
 
           <div class="footer__contacts">
-            <a class="footer__contacts-link" href="mailto:inf0@your-parser.ru">inf0@your-parser.ru</a>
+            <a class="footer__contacts-link" href="mailto:inf0@your-parser.ru"
+              >inf0@your-parser.ru</a
+            >
             <a class="footer__contacts-link" href="tel:+79517684792">+79517684792</a>
           </div>
         </div>
